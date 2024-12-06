@@ -26,7 +26,7 @@ body {
     background: linear-gradient(
         rgba(235, 234, 234, 0.7),
         rgba(44, 31, 31, 0.7)),
-        url(img/menu/index9.menu.jpg) center bottom no-repeat;
+        url(../img/menu/index9.menu.jpg) center bottom no-repeat;
     background-size: cover;
     min-height: 70vh;
     display: flex;
@@ -110,10 +110,11 @@ body {
     width: 150px;
     height: 50px;
     border: none;
-    background-color: #481E14
+    background-color: #C62E2E
     ;
     cursor: pointer;
     font-family: "Poppins", serif;
+    border-radius: 25px;
   }
   
   .center-button-absolute::after {
@@ -125,6 +126,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #f9fafc;
+    
   }
 
 

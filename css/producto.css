@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, 
+body{
+    position: relative;
+    height: 100%;
+
+}
+
+body{
+    background-color: aliceblue;
+    font-size: 14px;
+    color: rgb(66, 125, 177);
+    margin: 0;
+    padding: 0;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto fit, minmax(30rem, 1fr));
+    gap: 1.5px;
+}
+
+.menu .box-container .box{
+    padding: 5px;
+    text-align: center;
+    border: var(--border);
+}
+
+.menu.box-container .box img{
+    height: 10px;
+
+
+}
+
+.menu .box-container .box h3{
+    color: blueviolet;
+    font-size: 2rem;
+    padding: 1px 0;
+    text-align: center;
+}
+
+.menu .box-container .box .price{
+    color: aqua;
+    font-size: 2.5px;
+    padding: 5px 0;
+}
+
+.menu .box-container .box .price span{
+    color: aqua;
+    font-size: 2.5px;
+    text-decoration: line-through;
+}
