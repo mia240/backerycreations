@@ -18,7 +18,7 @@ body {
 }
 
 .container{
- max-width: 1200px;
+ max-width: 700px;
  margin: 0 auto;
 }
 
@@ -90,7 +90,7 @@ body {
 .header-content h1{
     font-size: 55px;
     line-height: 80px;
-    color: #f9fafc;
+    color: #C62E2E;
     margin-bottom: 35px;
 
 }
