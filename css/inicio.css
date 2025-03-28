@@ -132,7 +132,7 @@ body {
 
 .coffee{
     padding: 100px 0;
-    background-color: #FCFAEE;
+    background-color: hsl(30, 100%, 99%);
     position: relative;
     height: 1000px;
     
@@ -311,6 +311,8 @@ p{
     padding: 100px 0;
     text-align: center;
     height: 1100px;
+    
+    background-color: #f8f8f8;
 
 
 }
@@ -318,6 +320,7 @@ p{
 .blog-content{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .blog-1{
