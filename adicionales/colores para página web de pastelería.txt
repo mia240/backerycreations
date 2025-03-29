@@ -1,0 +1,20 @@
+lila: CDC1FF
+crema: FFF0D1
+blanco: FCFAEE
+crema2: F9DBBA
+morado oscuro: 640D5F
+marrón: B99470
+
+ action="index2.html"method="post"> 
+
+
+colores nuevos
+
+blanco
+rojo
+marrón
+crema o beige
+
+beige #EAC696
+rojo #C62E2E
+marrón #481E14

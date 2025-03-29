@@ -1,0 +1,323 @@
+/* Importar fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Resetear estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+
+/* Fondo general */
+body {
+    background: #f8f0f0; /* Crema */
+    color: #481E14; /* Marrón oscuro */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+}
+
+/* =================== */
+/* 🎨 ESTILOS DEL MENÚ */
+/* =================== */
+/* =================== */
+/* 🎨 ESTILOS DEL MENÚ */
+/* =================== */
+/* =================== */
+/* 🎨 ESTILOS DEL MENÚ */
+/* =================== */
+.sidebar {
+    width: 250px;
+    background: #C62E2E; /* Rojo */
+    padding: 20px;
+    min-height: 100vh;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    border-right: 3px solid #481E14; /* Línea marrón */
+}
+
+/* Título "Menú" centrado */
+.sidebar h2 {
+    font-size: 22px;
+    color: #FFFFFF; /* Blanco */
+    text-align: center;
+    border-bottom: 2px solid #EAC696; /* Línea separadora beige */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de las opciones del menú */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    border-bottom: 1px solid #EAC696; /* Línea beige */
+    padding-bottom: 10px;
+}
+
+/* Quitar línea al último elemento */
+.sidebar ul li:last-child {
+    border-bottom: none;
+}
+
+/* Enlaces del menú */
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF; /* Blanco */
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, color 0.3s;
+}
+
+/* Hover (cuando pasas el mouse) */
+.sidebar ul li a:hover {
+    background:rgb(255, 255, 255); /* Beige */
+    color: #481E14; /* Marrón */
+}
+
+/* Submenú oculto */
+.submenu {
+    display: none;
+    padding-left: 15px;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+
+/* 
+
+/* Submenú oculto */
+.submenu {
+    display: none;
+    padding-left: 15px;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+
+
+/* Submenú oculto */
+.submenu {
+    display: none;
+    padding-left: 15px;
+}
+
+/* Cuando pasas sobre "Nuestra Variedad", se muestra */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* ============================== */
+/* 🎨 ESTILOS DE LA SECCIÓN CENTRAL */
+/* ============================== */
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+/* Títulos principales */
+h2 {
+    color: #C62E2E; /* Rojo */
+    margin-bottom: 15px;
+    font-size: 24px;
+    border-left: 4px solid #C62E2E; /* Barra roja al lado */
+    padding-left: 10px;
+}
+
+/* Sección de productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    width: 30%;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.02);
+}
+
+/* =============================== */
+/* 🎨 ESTILOS DE OFERTAS Y DESCUENTOS */
+/* =============================== */
+#ofertas-descuentos ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+#ofertas-descuentos ul li {
+    background-color: #EAC696; /* Beige */
+    color: #481E14; /* Marrón */
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+#ofertas-descuentos ul li:hover {
+    transform: scale(1.02);
+    background: #C62E2E; /* Rojo */
+    color: white;
+}
+
+/* =============================== */
+/* 🎨 ESTILOS DEL FORMULARIO */
+/* =============================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+    color: #481E14; /* Marrón */
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #EAC696; /* Beige */
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #C62E2E; /* Rojo */
+}
+
+/* Botón de enviar */
+form input[type="submit"] {
+    background: #C62E2E; /* Rojo */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background: #481E14; /* Marrón */
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    background: #C62E2E;
+    
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+  
+  }
+  
+  .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+  }
+  
+  .text{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  
+  .icon.elem{
+    list-style: none;
+  
+  }
+  
+  .icon {
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+  
+  }
+  
+  .icon:hover{
+    transform: translateY(-10px);
+  }
+  
+  .footer h3{
+    text-align: center;
+    font-size: 27px;
+    color: #000000;
+     
+  }
+  
+  .menú{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  
+  }
+  
+  .menú-elem{
+    list-style: none;
+  
+  }
+  
+  .menú-icon{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+  
+  }
+  
+  .menú-icon:hover{
+    opacity: 1;
+  }
+  
+  .banner{
+    background-color: #EAC696;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(155, 76, 76, 0.2); 
+  }  
+
+
+
+
+
+
