@@ -6,7 +6,7 @@
  box-sizing: border-box;
  text-decoration: none;
  list-style: none;
- 
+
 
 }
 
@@ -286,6 +286,17 @@ button:hover {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 .footer{
     position: relative;
     width: 100%;
@@ -297,24 +308,32 @@ button:hover {
     align-items: center;
     flex-direction: column;
     height: 250px;
+
   
-  }
   
-  .social-icon{
+}
+
+.social-icon{
+
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin: 10px 5px;
     flex-wrap: wrap;
+
   }
   
-  .text{
+  
+
+.text{
+
     color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 15px;
+
   }
   
   .icon.elem{
@@ -322,11 +341,20 @@ button:hover {
   
   }
   
-  .icon {
+  
+
+.icon.elem{
+    list-style: none;
+
+}
+
+.icon {
+
     font-size: 20px;
     display: inline-block;
     margin: 0 10px;
     transition: 0.5s;
+
   
   }
   
@@ -341,13 +369,27 @@ button:hover {
      
   }
   
-  .menú{
+  
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+.footer h2{
+    text-align: center;
+    font-size: 27px;
+     
+}
+
+.menú{
+
     display: flex;
     justify-content: center;
     position: relative;
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
+
   
   }
   
@@ -356,7 +398,16 @@ button:hover {
   
   }
   
-  .menú-icon{
+  
+
+
+.menú-elem{
+    list-style: none;
+
+}
+
+.menú-icon{
+
     color: white;
     font-size: 20px;
     display: inline-block;
@@ -364,6 +415,7 @@ button:hover {
     margin: 5px 10px;
     opacity: 0.5;
     transition: 0.3s;
+
   
   }
   
@@ -371,12 +423,23 @@ button:hover {
     opacity: 1;
   }
   
-  .banner{
+  
+
+.menú-icon:hover{
+    opacity: 1;
+}
+
+.banner{
+
     background-color: #EAC696;
     height: 50px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(155, 76, 76, 0.2); 
+
   }  
+
+
+
 
 
 

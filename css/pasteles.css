@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     text-decoration: none;
     list-style: none;
 }
@@ -19,6 +20,9 @@ body {
    
    
    }
+=======
+}
+>>>>>>> 27fbde2d2d407717e4896d6ddcfbca5da6839728
 
 .container {
     display: flex;
