@@ -279,29 +279,80 @@ form input[type="submit"]:hover {
     transform: translateY(-10px);
   }
   
-  .footer h3{
+  .footer{
+    position: relative;
+    width: 100%;
+    background: #C62E2E;
+
+   
+
+    
+
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.text{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.icon.elem{
+    list-style: none;
+
+}
+
+.icon {
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+.footer h2{
     text-align: center;
     font-size: 27px;
-    color: #000000;
      
-  }
-  
-  .menú{
+}
+
+.menú{
     display: flex;
     justify-content: center;
     position: relative;
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
-  
-  }
-  
-  .menú-elem{
+
+}
+
+.menú-elem{
     list-style: none;
-  
-  }
-  
-  .menú-icon{
+
+}
+
+.menú-icon{
     color: white;
     font-size: 20px;
     display: inline-block;
@@ -309,26 +360,19 @@ form input[type="submit"]:hover {
     margin: 5px 10px;
     opacity: 0.5;
     transition: 0.3s;
-  
-  }
-  
-  .menú-icon:hover{
+
+}
+
+.menú-icon:hover{
     opacity: 1;
-  }
-  
-  .banner{
+}
+
+.banner{
     background-color: #EAC696;
     height: 50px;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(155, 76, 76, 0.2); 
-<<<<<<< HEAD
-  }  
 
+    box-shadow: 0 4px 8px rgba(155, 76, 76, 0.2);
+    margin-top: 50px;
 
-
-
-
-
-=======
-  }  
->>>>>>> 27fbde2d2d407717e4896d6ddcfbca5da6839728
+}

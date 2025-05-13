@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>galletas</title>
     <link rel="stylesheet" href="css/galletas.css">
+    <script src="carrito.js" defer></script>
 </head>
 <div class="container">
-    <!-- MENÚ LATERAL -->
+   
     <aside class="sidebar">
         <h2>Menú</h2>
         <ul>
@@ -22,12 +23,25 @@
                     <li><a href="#tortas"> Tortas</a></li>
                 </ul>
             </li>
-            <li><a href="#">Ofertas y Descuentos</a></li>
-            <li><a href="#">Pedido Personalizado</a></li>
+            <li><a href="productos.html">Ir al menú</a></li>
+            
+            <li><a href="inicio.html" class="glitch"> Volver al inicio</a></li>
         </ul>
     </aside>
 
-    <!-- SECCIÓN PRODUCTOS -->
+    <header>
+        <div class="carrito" id="carrito">
+            <button class="carrito-icono" onclick="toggleCarrito()">🛒 <span id="contador">0</span></button>
+            <div class="carrito-contenido" id="carrito-contenido">
+                <h3>Carrito</h3>
+                <ul id="lista-carrito"></ul>
+                <p>Total: $<span id="total">0.00</span></p>
+                <button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar</button>
+            </div>
+        </div>
+    </header>
+
+    
     <section class="productos">
         <h2>Galletas</h2>
         <div class="productos-lista">
@@ -35,137 +49,84 @@
                 <img src="img/index/index6.jpg" alt="Pastel">
                 <h3>Pastel de Chocolate</h3>
                 <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
             </div>
             <div class="producto">
                 <img src="img/index/index6.jpg" alt="Pastel">
                 <h3>Pastel de Chocolate</h3>
                 <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
-            </div>
-
-            <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
             </div>
 
             <div class="producto">
                 <img src="img/index/index6.jpg" alt="Pastel">
                 <h3>Pastel de Chocolate</h3>
                 <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/index/index6.jpg" alt="Pastel">
+                <h3>Pastel de Chocolate</h3>
+                <p class="precio">$15.99</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
             </div>
 
             <div class="producto">
                 <img src="img/index/index6.jpg" alt="Pastel">
                 <h3>Pastel de Chocolate</h3>
                 <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
             </div>
 
             <div class="producto">
                 <img src="img/index/index6.jpg" alt="Pastel">
                 <h3>Pastel de Chocolate</h3>
                 <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/index/index6.jpg" alt="Pastel">
+                <h3>Pastel de Chocolate</h3>
+                <p class="precio">$15.99</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
             </div>
 
             <div class="producto">
                 <img src="img/index/index6.jpg" alt="Pastel">
                 <h3>Pastel de Chocolate</h3>
                 <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
             </div>
 
             <div class="producto">
                 <img src="img/index/index6.jpg" alt="Pastel">
                 <h3>Pastel de Chocolate</h3>
                 <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/index/index6.jpg" alt="Pastel">
+                <h3>Pastel de Chocolate</h3>
+                <p class="precio">$15.99</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
             </div>
             <div class="producto">
                 <img src="img/index/index6.jpg" alt="Pastel">
                 <h3>Pastel de Chocolate</h3>
                 <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
             </div>
              <div class="producto">
                 <img src="img/index/index6.jpg" alt="Pastel">
                 <h3>Pastel de Chocolate</h3>
                 <p class="precio">$15.99</p>
-                <button class="btn-comprar">Comprar</button>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
             </div>
            
         </div>
     </section>
 </div>
-<div class="banner">
-</div>
-<footer class="footer">
-    
 
-    <h2>Conectate con nosotros</h2>
-    <ul class="social-icon">
-            
-    <li class="icon-elem">
-    <a href="a" class="icon">
-    <img src="img/index2/ig2.png" height="28px">
-    </a>
-            
-    <a href="a" class="icon">
-    <img src="img/index2/facebook.png" height="28px">
-    </a>
-            
-    <a href="a" class="icon"> 
-    <img src="img/index2/twitter.png" height="28px">
-    </a>
-            
-    <a href="a" class="icon">
-    <img src="img/index2/ws.png" height="28px">
-    </a>
-            
-    <a href="a" class="icon">
-    <img src="img/index2/gmail.png" height="28px">
-    </a>
-            
-    </li>
-    </ul>
-                
-    <ul class="menú">
-    <li class="menú-elem">
-    <a href="inicio.html" class="menú-icon">Inicio</a>
-    </li>
-            
-    <li class="menú-elem">
-    <a href="nosotros2.html" class="menú-icon">Nosotros</a>
-    </li>
-            
-    <li class="menú-elem">
-    <a href="menu.html" class="menú-icon">Menú</a>
-    </li>
-            
-    <li class="menú-elem">
-    <a href="login.html" class="menú-icon">Registrate</a>
-    </li>
-    </ul>
-            
-    <p class="text">@2024 | Todos los derechos reservados</p>
-            
-            
-    </footer>
-    </body>
-    </html>
+</body>
+</html>

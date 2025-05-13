@@ -294,3 +294,68 @@ body {
     width: 100%;
     box-shadow: 0 4px 8px rgba(155, 76, 76, 0.2); 
   }  
+  .carrito {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    background-color: #C62E2E;
+}
+.carrito:hover{
+    background: #C62E2E;
+    transform: scale(1.1);
+}
+.carrito-icono {
+    background: #C62E2E;
+    color: #fcf6f6;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.carrito-contenido {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 250px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carrito-contenido.mostrar {
+    display: block;
+}
+
+.btn-vaciar {
+    background-color: #EAC696;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn-vaciar:hover{
+    background-color: #481E14;
+    transform: scale(1.1);
+}
