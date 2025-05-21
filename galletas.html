@@ -9,120 +9,138 @@
 </head>
 <div class="container">
    
-    <aside class="sidebar">
-        <h2>Menú</h2>
-        <ul>
-            <li class="dropdown">
-                <a href="#nuestra-variedad" class="glitch">Nuestra Variedad</a>
-                <ul class="submenu">
-                    <li><a href="#pasteles"> Pasteles</a></li>
-                    <li><a href="#galletas"> Galletas</a></li>
-                    <li><a href="#bebidas"> Bebidas</a></li>
-                    <li><a href="#cupcakes"> Cupcakes</a></li>
-                    <li><a href="#donas">Donas</a></li>
-                    <li><a href="#tortas"> Tortas</a></li>
-                </ul>
-            </li>
-            <li><a href="productos.html">Ir al menú</a></li>
-            
-            <li><a href="inicio.html" class="glitch"> Volver al inicio</a></li>
-        </ul>
-    </aside>
+<aside class="sidebar">
+<h2>Menú</h2>
+<ul>
+<li class="dropdown">
+<a href="#nuestra-variedad" class="glitch">Nuestra Variedad</a>
+<ul class="submenu">
+<li><a href="pasteles.html"> Pasteles</a></li>
+<li><a href="galletas.html"> Galletas</a></li>
+<li><a href="bebidas.html"> Bebidas</a></li>
+<li><a href="cupcake.html"> Cupcakes</a></li>
+<li><a href="donas.html">Donas</a></li>
+<li><a href="rebanadas.html"> Rebanadas</a></li>
+</ul>
+</li>
+<li><a href="productos.html">Ir al menú</a></li>
+<li><a href="index.html" class="glitch"> Volver al inicio</a></li>
+</ul>
+</aside>
 
-    <header>
-        <div class="carrito" id="carrito">
-            <button class="carrito-icono" onclick="toggleCarrito()">🛒 <span id="contador">0</span></button>
-            <div class="carrito-contenido" id="carrito-contenido">
-                <h3>Carrito</h3>
-                <ul id="lista-carrito"></ul>
-                <p>Total: $<span id="total">0.00</span></p>
-                <button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar</button>
-            </div>
-        </div>
-    </header>
+<header>
+<div class="carrito" id="carrito">
+<div class="carrito-fijo"></div>
+<button class="carrito-icono" onclick="toggleCarrito()">🛒 <span id="contador">0</span></button>
+<div class="carrito-contenido" id="carrito-contenido">
+<h3>Carrito</h3>
+<ul id="lista-carrito"></ul>
+<p>Total: $<span id="total">0.00</span></p>
+<button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar</button>
+</div>
+</div>
+</header>
 
-    
-    <section class="productos">
-        <h2>Galletas</h2>
-        <div class="productos-lista">
-            <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
-            </div>
+<section class="productos">
+<h2>Galletas</h2>
 
-            <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+<div class="productos-lista">
+<div class="producto">
+<img src="img/menu/galletas/galletas1.jpg" alt="Pastel" height="145">
+<h3>Choco Bliss</h3>
+<p>Galletas suaves con chispas de chocolate derretido en cada bocado.</p>
+                <p class="precio">$120</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Choco Bliss', 120)">Comprar</button>
             </div>
             <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+                <img src="img/menu/galletas/galletas2.jpg" alt="Pastel" height="145" width="200">
+                <h3>Lemon Bliss</h3>
+                <p>Galletas crujientes con sabor a limón y un toque dulce y ácido.
+</p>
+                <p class="precio">$120</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Lemon Bliss', 120)">Comprar</button>
             </div>
 
             <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+                <img src="img/menu/galletas/galletas3.jpg" alt="Pastel" height="145">
+                <h3>Pins cookies</h3>
+                <p>Galletas suaves decoradas con coloridos pines frutales.</p>
+                <p class="precio">$200</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 200)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/menu/galletas/galletas4.jpg" alt="Pastel" height="145">
+                <h3>Choco Lover’s Treat</h3>
+                <p>Galletas con chocolate por encima, perfectas para amantes del chocolate.</p>
+                <p class="precio">$150</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Choco Lover’s Treat', 150)">Comprar</button>
             </div>
 
             <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+                <img src="img/menu/galletas/galletas5.jpg" alt="Pastel" height="145">
+                <h3>Jammy Heart</h3>
+                
+                <p>Galletas con centro de mermelada frutal, dulces y suaves al morder.
+</p>
+                <p class="precio">$75</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Jammy Heart', 75)">Comprar</button>
             </div>
 
             <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+                <img src="img/menu/galletas/galletas6.jpg" alt="Pastel" height="145">
+                <h3>Coco Delicius</h3>
+                <p>Galletas doraditas con sabor tropical a coco, crujientes y aromáticas.</p>
+                <p class="precio">$40</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Coco Delicius', 40)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/menu/galletas/galletas7.webp" alt="Pastel" height="145">
+                <h3>Nutella cookies</h3>
+                <p>Galletas suaves con un irresistible centro cremoso de Nutella.</p>
+                <p class="precio">$40</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Nutella cookies', 40)">Comprar</button>
             </div>
 
             <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+                <img src="img/menu/galletas/galletas8.jpg" alt="Pastel" height="145">
+                <h3>Choco taste</h3>
+                <P>Galletas de chocolate ricas con chispitas de chocolate fundido en cada bocado.</P>
+                <p class="precio">$210</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Choco taste', 210)">Comprar</button>
             </div>
 
             <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+                <img src="img/menu/galletas/galletas9.png" alt="Pastel" height="145">
+                <h3>Velvet Bites</h3>
+                <p>Galletas suaves con sabor a red velvet y un toque cremoso irresistible.</p>
+                <p class="precio">$310</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Velvet Bites', 310)">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/menu/galletas/galletas10.jpg" alt="Pastel" height="145">
+                <h3>Cookies sprinkles</h3>
+                <p>Galletas de vainilla glaseadas y con chispitas de colores.</p>
+                <p class="precio">$110</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Cookies sprinkles', 110)">Comprar</button>
             </div>
             <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+                <img src="img/menu/galletas/galletas11.jpg" alt="Pastel" height="145">
+                <h3>M&M glow</h3>
+                <p>Galletas crujientes y coloridas con deliciosos M\&M's por encima.</p>
+                <p class="precio">$110</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('M&M glow', 110)">Comprar</button>
             </div>
              <div class="producto">
-                <img src="img/index/index6.jpg" alt="Pastel">
-                <h3>Pastel de Chocolate</h3>
-                <p class="precio">$15.99</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 15.99)">Comprar</button>
+                <img src="img/menu/galletas/galletas12.jpg" alt="Pastel" height="145">
+                <h3>Shaped cookies</h3>
+                <p>Galletas con formas personalizadas a tú gusto para eventos.</p>
+                
+                <p class="precio">$200</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pastel de Chocolate', 200)">Comprar</button>
             </div>
+
+             <p>PD: Cada paquete contiene 12 sabrosas galletas.😊</p>
            
         </div>
     </section>

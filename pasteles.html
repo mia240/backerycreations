@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pasteles</title>
+    <link rel="stylesheet" href="css/galletas.css">
+    <script src="carrito.js" defer></script>
+</head>
+<div class="container">
+   
+<aside class="sidebar">
+<h2>Menú</h2>
+<ul>
+<li class="dropdown">
+<a href="#nuestra-variedad" class="glitch">Nuestra Variedad</a>
+<ul class="submenu">
+<li><a href="pasteles.html"> Pasteles</a></li>
+<li><a href="galletas.html"> Galletas</a></li>
+<li><a href="bebidas.html"> Bebidas</a></li>
+<li><a href="cupcake.html"> Cupcakes</a></li>
+<li><a href="donas.html">Donas</a></li>
+<li><a href="rebanadas.html"> Rebanadas</a></li>
+</ul>
+</li>
+            
+<li><a href="productos.html">Ir al menú</a></li>
+<li><a href="index.html" class="glitch"> Volver al inicio</a></li>
+</ul>
+</aside>
+
+<header>
+<div class="carrito" id="carrito">
+<div class="carrito-fijo"></div>
+<button class="carrito-icono" onclick="toggleCarrito()">🛒 <span id="contador">0</span></button>
+<div class="carrito-contenido" id="carrito-contenido">
+<h3>Carrito</h3>
+<ul id="lista-carrito"></ul>
+<p>Total: $<span id="total">0.00</span></p>
+<button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar</button>
+</div>
+</div>
+</header>
+
+    
+<section class="productos">
+<h2>Pasteles</h2>
+<div class="productos-lista">
+<div class="producto">
+<img src="img/menu/pasteles/pastel1.webp" alt="Pastel" height="145">
+<h3>Choco cake</h3>
+<p> Delicioso pastel esponjoso de chocolate.</p>
+<p class="precio">$680</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Choco cake', 680)">Comprar</button>
+</div>
+            
+<div class="producto">
+<img src="img/menu/pasteles/pastel2.jpg" alt="Pastel" height="145" width="200">
+<h3>Velvet cake</h3>
+<p> Clásico pastel Red Velvet con textura suave.</p>
+<p class="precio">$1200</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Velvet cake', 1200)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/pasteles/pastel3.JPG" alt="Pastel" height="145">
+<h3>Caramel cake</h3>
+<p> Pastel suave con capas de caramelo cremoso.</p>
+<p class="precio">$860</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Caramel cake', 860)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/pasteles/pastel4.jpg" alt="Pastel" height="145">
+<h3>Angel cake</h3>
+<p>Pastel de ángel ligero y esponjoso.</p>
+<p class="precio">$1500</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Angel cake', 1500)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/pasteles/pastel5.jpg" alt="Pastel" height="145">
+<h3>Straw delicius cake</h3>
+<p> Pastel relleno de crema y fresas frescas.</p>
+<p class="precio">$750</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Straw delicius cake', 680)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/pasteles/pastel6.jpg" alt="Pastel" height="145">
+<h3>Fruits choco cake</h3>
+<P> Pastel frutas frescas y trozos de chocolate.</P>
+<p class="precio">$720</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Fruits choco cake', 720)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/pasteles/pastel7.jpg" alt="Pastel" height="145">
+<h3>Three milks</h3>
+<P> Pastel húmedo bañado en mezcla de tres leches.</P>
+<p class="precio">$450</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Three milks', 450)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/pasteles/pastel8.jpg" alt="Pastel" height="145">
+<h3>Orange paradise</h3>
+<P>Pastel con sabor a naranja y una textura suave.</P>
+<p class="precio">$500</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Orange paradise', 500)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/pasteles/pastel9.avif" alt="Pastel" height="145">
+<h3>Lemon Bliss</h3>
+<p>Pastel refrescante con sabor a limón natural.</p>
+<p class="precio">$480</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Lemon Bliss', 480)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/pasteles/pastel10.jpg" alt="Pastel" height="145">
+<h3>Oreo cake</h3>
+<p>Pastel capas de galleta Oreo triturada.</p>
+<p class="precio">$700</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Oreo cake', 700)">Comprar</button>
+</div>
+            
+<div class="producto">
+<img src="img/menu/pasteles/pastel11.jpg" alt="Pastel" height="145">
+<h3>Tripe Choco</h3>
+<p>Pastel chocolatoso con capas de bizcocho.</p>
+<p class="precio">$600</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Tripe choco', 600)">Comprar</button>
+</div>
+            
+<div class="producto">
+<img src="img/menu/pasteles/pastel12.jpg" alt="Pastel" height="145">
+<h3>Raspberry taste</h3>
+<p> Pastel suave con relleno y cobertura de frambuesas.</p>
+<p class="precio">$900</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Raspberry taste', 900)">Comprar</button>
+</div>
+           
+</div>
+</section>
+</div>
+
+</body>
+</html>

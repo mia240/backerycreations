@@ -157,6 +157,13 @@ h2 {
     transition: transform 0.3s ease-in-out;
 }
 
+.producto a{
+
+     text-decoration: none;
+     color: inherit;
+
+}
+
 .producto:hover {
     transform: scale(1.02);
 }
@@ -224,13 +231,7 @@ form input[type="submit"]:hover {
     background: #481E14; /* Marrón */
 }
 
-<<<<<<< HEAD
-=======
 
-
-
-
->>>>>>> 27fbde2d2d407717e4896d6ddcfbca5da6839728
 .footer{
     position: relative;
     width: 100%;

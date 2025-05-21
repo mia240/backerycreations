@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donas</title>
+    <link rel="stylesheet" href="css/galletas.css">
+    <script src="carrito.js" defer></script>
+</head>
+<div class="container">
+   
+    <aside class="sidebar">
+        <h2>Menú</h2>
+        <ul>
+            <li class="dropdown">
+                <a href="#nuestra-variedad" class="glitch">Nuestra Variedad</a>
+                <ul class="submenu">
+                    <li><a href="pasteles.html"> Pasteles</a></li>
+                    <li><a href="galletas.html"> Galletas</a></li>
+                    <li><a href="bebidas.html"> Bebidas</a></li>
+                    <li><a href="cupcake.html"> Cupcakes</a></li>
+                    <li><a href="donas.html">Donas</a></li>
+                    <li><a href="rebanadas.html"> Rebanadas</a></li>
+                </ul>
+            </li>
+            <li><a href="productos.html">Ir al menú</a></li>
+            
+            <li><a href="index.html" class="glitch"> Volver al inicio</a></li>
+        </ul>
+    </aside>
+
+    <header>
+        <div class="carrito" id="carrito">
+            <div class="carrito-fijo"></div>
+            <button class="carrito-icono" onclick="toggleCarrito()">🛒 <span id="contador">0</span></button>
+            <div class="carrito-contenido" id="carrito-contenido">
+                <h3>Carrito</h3>
+                <ul id="lista-carrito"></ul>
+                <p>Total: $<span id="total">0.00</span></p>
+                <button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar</button>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="productos">
+        <h2>Donas</h2>
+        <div class="productos-lista">
+            <div class="producto">
+                <img src="img/menu/donas/donas1.jpg" alt="Pastel" height="145">
+                <h3> Sugar Glow</h3>
+                <p>Donas clásicas espolvoreadas con azúcar, dulces y esponjosas.</p>
+                <p class="precio">$60</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito(' Sugar Glow', 60)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/menu/donas/donas2.jpg" alt="Pastel" height="145" width="200">
+                <h3>Choco Glaze</h3>
+                <p>Donas suaves cubiertas con glaseado de chocolate dulce y brillante.</p>
+                <p class="precio">$120</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Choco Glaze', 120)">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/menu/donas/donas3.jpg" alt="Pastel" height="145">
+                <h3>Twist Glaze</h3>
+                <p>Donas con glaseado de chocolate y blanco, combinación irresistible.</p>
+                <p class="precio">$150</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Twist Glaze', 150)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/menu/donas/donas4.jpg" alt="Pastel" height="145">
+                <h3>Happy Dots</h3>
+                <p>donas con un sabroso glaseado blanco y chispitas.</p>
+                <p class="precio">$150</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Happy Dots', 150)">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/menu/donas/donas5.jpg" alt="Pastel" height="145">
+                <h3> Choco Party</h3>
+                <p>Donas suaves cubiertas con glaseado de chocolate y chispitas crujientes.</p>
+                <p class="precio">$150</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito(' Choco Party', 150)">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/menu/donas/donas6.jpg" alt="Pastel" height="145">
+                <h3>Pink Glaze</h3>
+                <p>Donas esponjosas cubiertas con glaseado rosado y chispitas dulce y llamativo.</p>
+                <p class="precio">$150</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Pink Glaze', 150)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/menu/donas/donas7.jpg" alt="Pastel" height="145">
+                <h3> Dulce Dream</h3>
+                <p>Donas suaves bañadas en glaseado cremoso de caramelo dulce y glaseado blanco.</p>
+                <p class="precio">$160</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Dulce Dream', 160)">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/menu/donas/donas8.jpg" alt="Pastel" height="145">
+                <h3>FunTop Donut</h3>
+                <p>Donas surtidas con variedad de glaseados y decoraciones coloridas y divertidas.</p>
+                <p class="precio">$180</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('FunTop Donut', 180)">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/menu/donas/donas9.jpg" alt="Pastel" height="145">
+                <h3>Oaty Sweet</h3>
+                <p>Donas suaves con cobertura de avena, crujientes y nutritivas.</p>
+                <p class="precio">$180</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Oaty Sweet', 180)">Comprar</button>
+            </div>
+
+            <div class="producto">
+                <img src="img/menu/donas/donas10.jpg" alt="Pastel" height="145">
+                <h3>CinnaTwist</h3>
+                <p>Donas esponjosas espolvoreadas con canela aromática y dulce.</p>
+                <p class="precio">$70</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('CinnaTwist', 70)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/menu/donas/donas11.jpg" alt="Pastel" height="145">
+                <h3>Creamy Puff</h3>
+                <p>Donas esponjosas azúcar por fuera y rellenas de dulce de leche cremoso.</p>
+                <p class="precio">$90</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Creamy Puff', 90)">Comprar</button>
+            </div>
+             <div class="producto">
+                <img src="img/menu/donas/donas12.jpg" alt="Pastel" height="145">
+                <h3>Berry Burst</h3>
+                <p>Donas espolvoreadas con azúcar y rellenas de mermelada dulce y frutal.</p>
+                <p class="precio">$50</p>
+                <button class="btn-comprar" onclick="agregarAlCarrito('Berry Burst', 50)">Comprar</button>
+            </div>
+
+            <P>PD: Cada paquete contiene 6 donas.😊</P>
+           
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

@@ -202,6 +202,11 @@ body {
     transform: scale(1.1);
 }
 
+carrito-fijo{
+     position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
 
 .footer{
     position: relative;
@@ -294,24 +299,15 @@ body {
     width: 100%;
     box-shadow: 0 4px 8px rgba(155, 76, 76, 0.2); 
   }  
-  .carrito {
+
+
+.carrito {
     position: fixed;
     top: 10px;
     right: 10px;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-    background-color: #C62E2E;
+    z-index: 9999;
 }
-.carrito:hover{
-    background: #C62E2E;
-    transform: scale(1.1);
-}
+
 .carrito-icono {
     background: #C62E2E;
     color: #fcf6f6;
@@ -319,18 +315,29 @@ body {
     padding: 10px 15px;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.carrito-icono:hover {
+    transform: scale(1.1);
 }
 
 .carrito-contenido {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 50px; /* espacio debajo del botón */
     right: 0;
     width: 250px;
     background: white;
     border: 1px solid #ddd;
     padding: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 10000;
 }
 
 .carrito-contenido.mostrar {
@@ -341,9 +348,40 @@ body {
     background-color: #EAC696;
     color: white;
     border: none;
-    padding: 5px;
-    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 20px;
     cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-vaciar:hover {
+    background-color: #481E14;
+    transform: scale(1.1);
+}
+
+
+
+
+.descripcion-contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* <- Esto centra el botón y la descripción */
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Esto también mantiene todo centrado */
+}
+
+
+.btn-descripcion {
+    background: #481E14;
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -352,10 +390,8 @@ body {
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-
 }
-
-.btn-vaciar:hover{
-    background-color: #481E14;
+.btn-descripcion {
+    background: #C62E2E;
     transform: scale(1.1);
 }

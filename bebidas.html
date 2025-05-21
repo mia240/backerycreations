@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bebidas</title>
+    <link rel="stylesheet" href="css/galletas.css">
+    <script src="carrito.js" defer></script>
+</head>
+<div class="container">
+   
+<aside class="sidebar">
+<h2>Menú</h2>
+<ul>
+
+<li class="dropdown">
+<a href="#nuestra-variedad" class="glitch">Nuestra Variedad</a>
+<ul class="submenu">
+<li><a href="pasteles.html"> Pasteles</a></li>
+<li><a href="galletas.html"> Galletas</a></li>
+<li><a href="bebidas.html"> Bebidas</a></li>
+<li><a href="cupcake.html"> Cupcakes</a></li>
+<li><a href="donas.html">Donas</a></li>
+<li><a href="rebanadas.html"> Rebanadas</a></li>
+</ul>
+</li>
+<li><a href="productos.html">Ir al menú</a></li>
+            
+<li><a href="index.html" class="glitch"> Volver al inicio</a></li>
+</ul>
+</aside>
+
+<header>
+<div class="carrito" id="carrito">
+<div class="carrito-fijo"></div>
+<button class="carrito-icono" onclick="toggleCarrito()">🛒 <span id="contador">0</span></button>
+<div class="carrito-contenido" id="carrito-contenido">
+<h3>Carrito</h3>
+<ul id="lista-carrito"></ul>
+<p>Total: $<span id="total">0.00</span></p>
+<button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar</button>
+</div>
+</div>
+</header>
+
+    
+<section class="productos">
+<h2>Bebidas</h2>
+<div class="productos-lista">
+<div class="producto">
+<img src="img/menu/batidos/batida1.jpg" alt="Pastel" height="145">
+<h3>ChocoLover Shake</h3>
+<p>Batido cremoso de chocolate intenso, dulce y reconfortante.</p>
+<p class="precio">$150</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('ChocoLover Shake', 150)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/batidos/batida2.jpg" alt="Pastel" height="145" width="200">
+<h3>Sweet Cloud</h3>
+<p>Batido suave de vainilla con toque delicioso de chocolate.</p>
+<p class="precio">$120</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Sweet Cloud', 120)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/batidos/batida3.jpg" alt="Pastel" height="145">
+<h3> Berry Vanilla Dream</h3>
+<p>Batido cremoso de vainilla con dulce sabor a fresas frescas.</p>
+<p class="precio">$140</p>
+<button class="btn-comprar" onclick="agregarAlCarrito(' Berry Vanilla Dream', 140)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/batidos/batida4.jpg" alt="Pastel" height="145">
+<h3> Cookies & ChocoCrush</h3>
+<p>Batido de chocolate con trozos de Oreo por encima.</p>
+<p class="precio">$160</p>
+<button class="btn-comprar" onclick="agregarAlCarrito(' Cookies & ChocoCrush', 160)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/batidos/batida5 (2).jpg" alt="Pastel" height="145">
+<h3>Golden Fresh</h3>
+<p>Jugo fresco y dulce de piña natural, perfecto para refrescarte.</p>
+<p class="precio">$60</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Golden Fresh', 60)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/batidos/batida6.jpg" alt="Pastel" height="145">
+<h3>Sunshine Juice</h3>
+<p>Jugo natural de naranja, cítrico y lleno de vitamina C.</p>
+<p class="precio">$60</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Sunshine Juice', 60)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/batidos/batida7.jpg" alt="Pastel" height="145">
+<h3>Tropical Kiss</h3>
+<p>Batido dulce y tropical de mango, refrescante y suave.</p>
+<p class="precio">$60</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Tropical Kiss', 60)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/batidos/batida8.jpg" alt="Pastel" height="145">
+<h3>Green Zing</h3>
+<p>Jugo saludable y refrescante con mezcla de verduras y frutas verdes.</p>
+<p class="precio">$60</p>
+<button class="btn-comprar" onclick="agregarAlCarrito(' Green Zing', 60)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/batidos/batida9.jpg" alt="Pastel" height="145">
+<h3>Bubble Pop</h3>
+<p>Boba refrescante con perlas de tapioca, dulce y divertida de masticar.</p>
+<p class="precio">$110</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Bubble Pop', 110)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/batidos/batida10.jpg" alt="Pastel" height="145">
+<h3>Ice coffe</h3>
+<p>Café frío, intenso y cremoso, ideal para despertar y refrescarte.</p>
+<p class="precio">$110</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Ice coffe', 110)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/batidos/batida11.jpg" alt="Pastel" height="145">
+<h3>Banana Bliss</h3>
+<p>Batido cremoso y dulce de banana natural, suave y nutritivo.</p>
+<p class="precio">$80</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Banana Bliss', 80)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/batidos/batida12.jpg" alt="Pastel" height="145">
+<h3> Mix Shake</h3>
+<p>Batido mezcla de frutas y sabores, dulce, fresco y delicioso.</p>
+<p class="precio">$120</p>
+<button class="btn-comprar" onclick="agregarAlCarrito(' Mix Shake', 120)">Comprar</button>
+</div>
+           
+</div>
+</section>
+</div>
+
+</body>
+</html>
