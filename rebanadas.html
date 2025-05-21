@@ -5,145 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rebanadas</title>
     <link rel="stylesheet" href="css/galletas.css">
-    <script src="carrito.js" defer></script>
-    <script src="galletas.js"></script>
+    <script src="css/galletas.css" defer></script>
+    <script src="javascript/carrito.js"></script>
 </head>
 <div class="container">
    
-    <aside class="sidebar">
-        <h2>Menú</h2>
-        <ul>
-            <li class="dropdown">
-                <a href="#nuestra-variedad" class="glitch">Nuestra Variedad</a>
-                <ul class="submenu">
-                    <li><a href="pasteles.html"> Pasteles</a></li>
-                    <li><a href="galletas.html"> Galletas</a></li>
-                    <li><a href="bebidas.html"> Bebidas</a></li>
-                    <li><a href="cupcake.html"> Cupcakes</a></li>
-                    <li><a href="donas.html">Donas</a></li>
-                    <li><a href="rebanadas.html"> Rebanadas</a></li>
-                </ul>
-            </li>
-            <li><a href="productos.html">Ir al menú</a></li>
-            
-            <li><a href="index.html" class="glitch"> Volver al inicio</a></li>
-        </ul>
-    </aside>
+<aside class="sidebar">
+<h2>Menú</h2>
+<ul>
 
-    <header>
-        <div class="carrito" id="carrito">
-            <div class="carrito-fijo"></div>
-            <button class="carrito-icono" onclick="toggleCarrito()">🛒 <span id="contador">0</span></button>
-            <div class="carrito-contenido" id="carrito-contenido">
-                <h3>Carrito</h3>
-                <ul id="lista-carrito"></ul>
-                <p>Total: $<span id="total">0.00</span></p>
-                <button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar</button>
-            </div>
-        </div>
-    </header>
+<li class="dropdown">
+<a href="#nuestra-variedad" class="glitch">Nuestra Variedad</a>
+<ul class="submenu">
+<li><a href="pasteles.html"> Pasteles</a></li>
+<li><a href="galletas.html"> Galletas</a></li>
+<li><a href="bebidas.html"> Bebidas</a></li>
+<li><a href="cupcake.html"> Cupcakes</a></li>
+<li><a href="donas.html">Donas</a></li>
+<li><a href="rebanadas.html"> Rebanadas</a></li>
+</ul>
+</li>
+<li><a href="productos.html">Ir al menú</a></li>
+            
+<li><a href="index.html" class="glitch"> Volver al inicio</a></li>
+</ul>
+</aside>
+
+<header>
+<div class="carrito" id="carrito">
+<div class="carrito-fijo"></div>
+<button class="carrito-icono" onclick="toggleCarrito()">🛒 <span id="contador">0</span></button>
+<div class="carrito-contenido" id="carrito-contenido">
+<h3>Carrito</h3>
+<ul id="lista-carrito"></ul>
+<p>Total: $<span id="total">0.00</span></p>
+<button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar</button>
+</div>
+</div>
+</header>
 
     
-    <section class="productos">
-        <h2>Rebanadas de pastel</h2>
-        <div class="productos-lista">
+<section class="productos">
+<h2>Rebanadas de pastel</h2>
+<div class="productos-lista">
             
-            <div class="producto">
-                <img src="img/menu/rebanas/reb1.jpg" alt="Pastel" height="145">
-                <h3>Choco Bliss</h3>
-                 <p>Deliciosa rebanada de pastel esponjosa de chocolate.</p>
-                <p class="precio">$110</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Choco Bliss', 110)">Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="img/menu/rebanas/reb2.jpg" alt="Pastel" height="145" width="200">
-                <h3>Velvet cake</h3>
-                <p> Clásica rebanada pastel Red Velvet con una textura suave.</p>
-                <p class="precio">$120</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Velvet cake', 120)">Comprar</button>
-            </div>
+<div class="producto">
+<img src="img/menu/rebanas/reb1.jpg" alt="Pastel" height="145">
+<h3>Choco Bliss</h3>
+<p>Deliciosa rebanada de pastel esponjosa de chocolate.</p>
+<p class="precio">$110</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Choco Bliss', 110)">Comprar</button>
+</div>
 
-            <div class="producto">
-                <img src="img/menu/rebanas/reb3.jpg" alt="Pastel" height="145">
-                <h3>Caramel cake</h3>
-                <p> Rebanada de pastel suave con capas de caramelo cremoso.</p>
-                <p class="precio">$110</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Caramel cake', 110)">Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="img/menu/rebanas/reb4.jpg" alt="Pastel" height="145">
-                <h3>Angel cake</h3>
-                <p>Rebanada de pastel de ángel ligero y esponjoso con frutas.</p>
-                <p class="precio">$90</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Angel cake', 90)">Comprar</button>
-            </div>
+<div class="producto">
+<img src="img/menu/rebanas/reb2.jpg" alt="Pastel" height="145" width="200">
+<h3>Velvet cake</h3>
+<p> Clásica rebanada pastel Red Velvet con una textura suave.</p>
+<p class="precio">$120</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Velvet cake', 120)">Comprar</button>
+</div>
 
-            <div class="producto">
-                <img src="img/menu/rebanas/reb5.jpg" alt="Pastel" height="145">
-                <h3>Straw delicius cake</h3>
-                <p>Deliciosa rebanada de pastel con capas suaves y relleno de crema y fresas frescas.</p>
-                <p class="precio">$130</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Straw delicius cake', 130)">Comprar</button>
-            </div>
+<div class="producto">
+<img src="img/menu/rebanas/reb3.jpg" alt="Pastel" height="145">
+<h3>Caramel cake</h3>
+<p> Rebanada de pastel suave con capas de caramelo cremoso.</p>
+<p class="precio">$110</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Caramel cake', 110)">Comprar</button>
+</div>
+            
+<div class="producto">
+<img src="img/menu/rebanas/reb4.jpg" alt="Pastel" height="145">
+<h3>Angel cake</h3>
+<p>Rebanada de pastel de ángel ligero y esponjoso con frutas.</p>
+<p class="precio">$90</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Angel cake', 90)">Comprar</button>
+</div>
 
-            <div class="producto">
-                <img src="img/menu/rebanas/reb6.jpg" alt="Pastel" height="145">
-                <h3>Fruits choco cake</h3>
-                <p> Rebanada de pastel exquisito que combina frutas frescas y trozos de chocolate.</p>
-                <p class="precio">$120</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Fruits choco cake', 120)">Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="img/menu/rebanas/reb7.jpg" alt="Pastel" height="145">
-                <h3>Three milks</h3>
-                <p>Rebanada de pastel esponjosa y húmeda bañada en mezcla de tres leches.</p>
-                <p class="precio">$110</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Three milks', 110)">Comprar</button>
-            </div>
+<div class="producto">
+<img src="img/menu/rebanas/reb5.jpg" alt="Pastel" height="145">
+<h3>Straw delicius cake</h3>
+<p>Deliciosa rebanada de pastel con capas suaves y relleno de crema y fresas frescas.</p>
+<p class="precio">$130</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Straw delicius cake', 130)">Comprar</button>
+</div>
 
-            <div class="producto">
-                <img src="img/menu/rebanas/reb8.jpg" alt="Pastel" height="145">
-                <h3>Orange paradise</h3>
-                <p> Rebanada de pastel fresca y cítrica, con sabor natural a naranja exquisita y esponjosa.</p>
-                <p class="precio">$60</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Orange paradise', 60)">Comprar</button>
-            </div>
+<div class="producto">
+<img src="img/menu/rebanas/reb6.jpg" alt="Pastel" height="145">
+<h3>Fruits choco cake</h3>
+<p> Rebanada de pastel exquisito que combina frutas frescas y trozos de chocolate.</p>
+<p class="precio">$120</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Fruits choco cake', 120)">Comprar</button>
+</div>
+            
+<div class="producto">
+<img src="img/menu/rebanas/reb7.jpg" alt="Pastel" height="145">
+<h3>Three milks</h3>
+<p>Rebanada de pastel esponjosa y húmeda bañada en mezcla de tres leches.</p>
+<p class="precio">$110</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Three milks', 110)">Comprar</button>
+</div>
 
-            <div class="producto">
-                <img src="img/menu/rebanas/reb9.jpg" alt="Pastel" height="145">
-                <h3>Lemon Bliss</h3>
-                <p>Rebanada de pastel refrescante con sabor a limón natural.</p>
-                <p class="precio">$55</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Lemon Bliss', 55)">Comprar</button>
-            </div>
+<div class="producto">
+<img src="img/menu/rebanas/reb8.jpg" alt="Pastel" height="145">
+<h3>Orange paradise</h3>
+<p> Rebanada de pastel fresca y cítrica, con sabor natural a naranja exquisita y esponjosa.</p>
+<p class="precio">$60</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Orange paradise', 60)">Comprar</button>
+</div>
 
-            <div class="producto">
-                <img src="img/menu/rebanas/reb10.jpg" alt="Pastel" height="145">
-                <h3>Oreo cake</h3>
-                <p> Rebanada de pastel cremosa de galleta Oreo triturada.</p>
-                <p class="precio">$120</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Oreo cake', 120)">Comprar</button>
-            </div>
-            <div class="producto">
-    <img src="img/menu/rebanas/reb11.jpg" alt="Pastel" height="145">
-    <h3>Tripe Choco</h3>
-    <p>Rebanada de pastel de chocolate con tres tipos
-        de chocolate
-    </p>
-    <p class="precio">$120</p>
+<div class="producto">
+<img src="img/menu/rebanas/reb9.jpg" alt="Pastel" height="145">
+<h3>Lemon Bliss</h3>
+<p>Rebanada de pastel refrescante con sabor a limón natural.</p>
+<p class="precio">$55</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Lemon Bliss', 55)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/rebanas/reb10.jpg" alt="Pastel" height="145">
+<h3>Oreo cake</h3>
+<p> Rebanada de pastel cremosa de galleta Oreo triturada.</p>
+<p class="precio">$120</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Oreo cake', 120)">Comprar</button>
+</div>
+
+<div class="producto">
+<img src="img/menu/rebanas/reb11.jpg" alt="Pastel" height="145">
+<h3>Tripe Choco</h3>
+<p>Rebanada de pastel de chocolate con tres tipos de chocolate
+</p>
+<p class="precio">$120</p>
 <button class="btn-comprar" onclick="agregarAlCarrito('Tripe Choco', 120)">Comprar</button>
 </div>
 
-             <div class="producto">
-                <img src="img/menu/rebanas/reb12.jpg" alt="Pastel" height="145">
-                <h3>Raspberry taste</h3>
-                <p>Rebanada de pastel suave con relleno y cobertura de frambuesas frescas</p>
-                <p class="precio">$80</p>
-                <button class="btn-comprar" onclick="agregarAlCarrito('Raspberry taste', 80)">Comprar</button>
-            </div>
+<div class="producto">
+<img src="img/menu/rebanas/reb12.jpg" alt="Pastel" height="145">
+<h3>Raspberry taste</h3>
+<p>Rebanada de pastel suave con relleno y cobertura de frambuesas frescas</p>
+<p class="precio">$80</p>
+<button class="btn-comprar" onclick="agregarAlCarrito('Raspberry taste', 80)">Comprar</button>
+</div>
            
-        </div>
-    </section>
+</div>
+</section>
 </div>
 
 
