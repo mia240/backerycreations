@@ -96,12 +96,19 @@ Creemos en el trabajo de equipo y en bridar experiencias dulces y memorables.</p
 </div>
         
 <div class="formulario">
-<form>
-<input type="text" placeholder="Tu nombre" required>
-<input type="email" placeholder="Tu correo" required>
-<textarea placeholder="Escribe tu reseña" required></textarea>
-<button type="submit">Enviar</button>
+ <form action="https://formsubmit.co/ymoyagallardo@gmail.com" method="POST">
+  <input type="text" name="nombre" placeholder="Tu nombre" required>
+  <input type="email" name="email" placeholder="Tu email" required>
+  <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+
+  <input type="hidden" name="_captcha" value="false" />
+ <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html" />
+
+  <input type="hidden" name="_autoresponse" value="¡Hola! Gracias por escribirme. Recibí tu mensaje y pronto me pondré en contacto contigo. ✨ Con cariño, Mia de Bakery Creations 🍰" />
+
+  <button type="submit">Enviar</button>
 </form>
+
 </div>
 </div>
 </section>

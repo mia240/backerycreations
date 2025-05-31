@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="css/productos.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<script src="javascript/productos.js" defer></script>
 </head>
+
 
 <body>
 
@@ -95,16 +97,22 @@
 <section id="pedido-personalizado">
 <h2>📞 Pedido Personalizado</h2>
 <p>Si deseas hacer un pedido personalizado, por favor contáctanos.</p>
-<form action="mailto:tuemail@gmail.com" method="post" enctype="text/plain">
-<label for="nombre">Nombre:</label>
-<input type="text" id="nombre" name="nombre" required>
-    
-<label for="email">Correo Electrónico:</label>
-<input type="email" id="email" name="email" required>
-<label for="pedido">Detalles del Pedido:</label>
-<textarea id="pedido" name="pedido" rows="4" required></textarea>
-<input type="submit" value="Enviar Pedido">
+<form id="pedidoForm">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" required>
+      
+  <label for="email">Correo Electrónico:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="telefono">Número de Teléfono:</label>
+  <input type="tel" id="telefono" name="telefono" placeholder="Ej: +01 809 456 7890" required>
+
+  <label for="pedido">Detalles del Pedido:</label>
+  <textarea id="pedido" name="pedido" rows="4" required></textarea>
+  
+  <input type="submit" value="Enviar Pedido">
 </form>
+
 </section>
 </div>
 </div>
