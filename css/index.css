@@ -453,6 +453,63 @@ p{
     
     
     
+
+      .manual-section {
+  padding: 40px;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.manual-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.manual-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #c0392b;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #c0392b;
+  display: inline-block;
+}
+
+.manual-description {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.manual-download-btn {
+  background-color: #8b0000;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.manual-download-btn:hover {
+  background-color: #a40000;
+}
+
+.manual-preview {
+  margin-top: 40px;
+  border: 2px solid #e0c3b1;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: white;
+}
+
+.manual-preview h3 {
+  color: #c0392b;
+  margin-bottom: 10px;
+}
+
     
     
     
